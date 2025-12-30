@@ -4,7 +4,8 @@
     <!-- <ros2_control name="GazeboSimSystem" type="system">
         <hardware>
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-        </hardware> -->
+        </hardware> 
+    -->
     
     <ros2_control name="RobotSystem" type="system">    
         <hardware>
@@ -64,13 +65,13 @@
 
     </ros2_control>
 
-    <gazebo>
+    <!-- <gazebo>
         <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
             <parameters>$(find rmitbot_controller)/config/rmitbot_controller.yaml</parameters>
             <ros>
                 <remapping>/mecanum_drive_controller/odom:=/odom</remapping>
             </ros>
         </plugin>
-    </gazebo>
+    </gazebo> -->
 
 </robot>
